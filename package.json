@@ -1,0 +1,8 @@
+{
+  "name": "supermarket-bank-new",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Навчальна система віртуального банку та каси магазину",
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "express": "^4.21.2", "qrcode": "^1.5.4" }
+}

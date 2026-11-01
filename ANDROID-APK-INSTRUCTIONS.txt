@@ -1,0 +1,22 @@
+SUPERMARKET BANK — Android APK build
+
+This ZIP includes the original PC server/cashier project plus an Android wrapper app.
+The Android app includes a native QR scanner and opens the bank page from the PC server.
+
+IMPORTANT:
+- The PC must be switched on and `npm.cmd start` must be running.
+- The phone and PC must be on the same Wi-Fi.
+- The app currently uses http://192.168.1.165:3000/bank.html.
+- If the PC's IPv4 address changes, edit BANK_URL in:
+  android-app/app/src/main/java/com/supermarketbank/app/MainActivity.java
+- This is a demo system, not a real bank or a secure public service.
+
+BUILD APK WITHOUT INSTALLING ANDROID STUDIO:
+1. Create/sign in to a GitHub account and create a new empty repository.
+2. Upload ALL files and folders from this ZIP to the repository (including hidden `.github` folder).
+3. Open the repository's Actions tab.
+4. Select "Build Supermarket Bank APK" and click "Run workflow".
+5. When it finishes, open the run and download the artifact named "SupermarketBank-APK".
+6. Extract the downloaded artifact; app-debug.apk is the installable APK.
+
+The website bank.js has been updated to use the Android native QR scanner when it runs inside this APK.
